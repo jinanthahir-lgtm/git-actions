@@ -1,0 +1,13 @@
+name: First workflow
+on:
+ push:
+jobs:
+  build:
+   runs-on: ubuntu-lates
+   steps:
+    - name: Checkout code
+      uses: action/checkout@v4
+    - name: Print build started
+      run: echo "Build started"
+    
+  
